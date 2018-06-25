@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#0000"
+              android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="90dp"
+        android:background="@drawable/inforwindow_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:maxLines="1"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="11dp"
+            android:text="机箱名"
+            android:textColor="@color/black_text"
+            android:textSize="13sp"/>
+
+        <com.vondear.rxtools.view.RxTextAutoZoom
+            android:id="@+id/agent_addr"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="机箱编号"
+            android:textColor="@color/black_text2"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:visibility="gone"
+            android:layout_marginLeft="14dp"
+            android:text="机箱描述"
+            android:maxLines="1"
+            android:textColor="#1DA1F2"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:background="#DFDFDF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/btn_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_blue_bg"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/navigation_LL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="@string/infowindow_navigation"
+                android:background="@drawable/btn_blue_bg"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 用来偏移inforwindow的位置-->
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

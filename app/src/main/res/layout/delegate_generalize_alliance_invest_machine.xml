@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusBarSize"
+            android:background="@color/theme_color"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/theme_color">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:scaleType="center"
+                android:src="@mipmap/icon_back"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="标题"
+                android:textColor="#ffffff"
+                android:textSize="22dp"/>
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="更多 ▼  "
+                android:textColor="#ffffff"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@color/line"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/empty_machine"
+            android:gravity="center"
+            android:text="暂无可投资机箱~"
+            android:textColor="#aeaeae"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

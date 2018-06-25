@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/iv_pic"
+    android:layout_width="55dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="55dp"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/bg_shop"
+    />
+    <TextView
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_alignTop="@id/iv_pic"
+        android:id="@+id/right_dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="商品名称"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:text="¥ 0"
+        android:textColor="@color/red"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/ll_count"
+        android:text="库存："
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/tv_price_old"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_pic"
+        android:textStyle="bold"
+        android:layout_marginLeft="18dp"
+        android:text="¥ 0"
+        android:textColor="#aeaeae"
+        android:textSize="12sp"/>
+    <LinearLayout
+        android:id="@+id/ll_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/iv_pic"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="right|center_vertical">
+        <ImageView
+            android:id="@+id/right_dish_remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:clickable="true"
+            android:src="@drawable/ic_remove_circle_outline_blue_700_36dp" />
+
+        <TextView
+            android:id="@+id/right_dish_account"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+        <ImageView
+            android:id="@+id/right_dish_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_circle_blue_700_36dp" />
+    </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:background="@color/line"
+    android:layout_below="@id/ll_count"
+    android:layout_marginTop="13dp"
+    android:layout_height="1.5dp"/>
+
+</RelativeLayout>

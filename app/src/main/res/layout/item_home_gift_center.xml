@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.vondear.rxtools.view.RxTextAutoZoom
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/btn_blue_wither_bg"
+        android:gravity="center"
+        android:text="品牌饮水0次"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_get"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="领取"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:sCornersBottomRightRadius="7dp"
+        app:sCornersTopRightRadius="7dp"
+        app:sGradientEndColor="@color/orange_low"
+        app:sGradientOrientation="RIGHT_LEFT"
+        app:sGradientStartColor="@color/orange_high"/>
+</LinearLayout>

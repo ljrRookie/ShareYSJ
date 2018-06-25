@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/line"
+              android:layout_height="match_parent">
+<include layout="@layout/toolbar"/>
+  <com.jcodecraeer.xrecyclerview.XRecyclerView
+      android:id="@+id/rv_ad_more"
+      android:layout_width="match_parent"
+      android:layout_margin="8dp"
+      android:visibility="visible"
+      android:layout_height="wrap_content"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:visibility="gone"
+        android:textColor="#aeaeae"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableTop="@mipmap/icon_ad_empty"
+        android:text="暂无广告"
+        android:textSize="14sp"
+        />
+  </RelativeLayout>
+
+</LinearLayout>

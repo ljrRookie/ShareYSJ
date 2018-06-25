@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="机箱名称"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="已投资人数：0"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/tv_num"
+        android:text="城市： "
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_num"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:text="剩余可投资金额：0.00 "
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_money"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:text="日期："
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="8dp"
+        android:background="@color/line"/>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_invest"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="投资"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:sCornersRadius="7dp"
+        app:sGradientEndColor="#67bffd"
+        app:sGradientOrientation="RIGHT_LEFT"
+        app:sGradientStartColor="@color/theme_color"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+package com.gxysj.shareysj.listener;
+
+
+import com.gxysj.shareysj.config_enum.OnLauncherFinishTag;
+
+/**
+ * Created by 傅令杰 on 2017/4/22
+ */
+
+public interface ILauncherListener {
+
+    void onLauncherFinish(OnLauncherFinishTag tag);
+}

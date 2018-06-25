@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_sign_in"/>
+
+    <ImageView
+        android:layout_marginTop="@dimen/statusBarSize"
+        android:id="@+id/btn_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="center"
+        android:src="@mipmap/icon_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="中沙水站"
+        android:textColor="#efefef"
+        android:textSize="30sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_gray_bg">
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_phone"
+            />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_phone"
+            android:background="@null"
+            android:hint="输入手机号码"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/rl_username"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_gray_bg">
+
+        <ImageView
+            android:id="@+id/iv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/icon_pwd"
+            />
+
+        <EditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/iv_pwd"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:hint="输入密码"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/rl_pwd"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btn_other_login"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="短信验证码登录>>"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/rl_pwd"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/btn_blue_bg"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <TextView
+            android:id="@+id/btn_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="马上注册>>"
+            android:textColor="@color/theme_color"
+            />
+
+        <TextView
+            android:id="@+id/btn_find_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="忘记密码?"
+            android:textColor="#ff9600"
+            />
+    </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:text="-------  第三方登录  -------"
+            android:textColor="@color/theme_color"/>
+
+        <ImageView
+            android:id="@+id/btn_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/icon_wechat"
+            />
+
+
+</RelativeLayout>

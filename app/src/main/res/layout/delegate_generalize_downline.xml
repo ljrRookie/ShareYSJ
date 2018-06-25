@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_downline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@mipmap/empty_downline"
+            android:gravity="center"
+            android:text="暂无下线记录~"
+            android:drawablePadding="10dp"
+            android:textColor="#aeaeae"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

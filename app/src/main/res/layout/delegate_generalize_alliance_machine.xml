@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/line"
+              android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_detail"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="暂无投资机箱~"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:drawableTop="@mipmap/empty_machine"
+        android:visibility="gone"
+        android:textSize="14sp"
+        />
+    </RelativeLayout>
+</LinearLayout>

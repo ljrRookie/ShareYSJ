@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/bg_pic"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="名称"
+            android:layout_toRightOf="@id/iv_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_pic"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:text="注册使用时间：2018-01-20 10:32:23"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/line"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="驳回原因："
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:text="审核不通过"
+                    android:textColor="@color/red"
+                    android:textSize="13sp"
+                    />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="展示时间"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/edit_white_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="1小时"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="标题"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/edit_white_bg"
+                android:hint="请输入标题"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="描述"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/edit_white_bg"
+                android:gravity="start"
+                android:hint="请输入内容"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:scrollbars="vertical"
+                android:textSize="15sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_flag_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="图片"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_flag_photo"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/tv_flag_photo"
+                    android:text="(最多三张)"
+                    android:textColor="#aeaeae"
+                    android:textSize="15sp"
+                    />
+            </RelativeLayout>
+            <com.gxysj.shareysj.ui.AutoPhotoLayout
+                android:id="@+id/auto_photo_layout"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content"
+                app:icon_size="8sp"
+                app:item_margin="8"
+                app:line_count="4"
+                app:max_count="3"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="立即发布"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:sGradientEndColor="#67bffd"
+        app:sGradientOrientation="RIGHT_LEFT"
+        app:sGradientStartColor="@color/theme_color"/>
+
+</LinearLayout>

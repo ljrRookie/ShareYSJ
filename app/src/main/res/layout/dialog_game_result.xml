@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/bg_game"
+        >
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/bg_game_result"
+            />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="恭喜你\n获得5元红包"
+            android:textColor="#df0541"
+            android:textSize="15sp"/>
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_commit"
+            app:sGradientEndColor="#ffc12b"
+           android:layout_alignBottom="@id/iv_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            app:sGradientOrientation="RIGHT_LEFT"
+            app:sGradientStartColor="#feba80"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="45dp"
+            app:sCornersRadius="18dp"
+            android:paddingRight="45dp"
+            android:text="确定"
+            android:textColor="#df0541"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

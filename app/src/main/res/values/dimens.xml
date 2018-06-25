@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_dish_circle_size">25dp</dimen>
+    <!--状态栏高度-->
+    <dimen name="statusBarSize">20dp</dimen>
+    <!--状态栏和标题栏高度一起-->
+    <dimen name="actionBarWithStatusBarSize">74dp</dimen>
+
+    <!--名字字体的大小-->
+    <dimen name="fontNameSize">15sp</dimen>
+</resources>

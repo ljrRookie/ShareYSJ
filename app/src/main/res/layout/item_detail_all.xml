@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/icon_recharge"
+            />
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="-10.00"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_price"
+            android:layout_toRightOf="@id/iv_pic"
+            android:text="充值饮水"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_pic"
+            android:text="2018-02-04 10:23"
+            android:textSize="13sp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+</LinearLayout>

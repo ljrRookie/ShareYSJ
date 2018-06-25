@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical"
+              android:visibility="visible">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/btn_pic"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:text="头像"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@mipmap/bg_portrait"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:text="用户名"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="90dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请填写"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/stv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="5dp"
+                app:sLeftTextColor="#000000"
+                app:sLeftTextSize="15sp"
+                app:sLeftTextString="手机号"
+                app:sRightIconRes="@mipmap/icon_black_to"
+                app:sRightTextColor="#000000"
+                app:sRightTextString="手机号码"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:text="邮箱"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="90dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请填写"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:text="性别"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <RadioButton
+                        android:id="@+id/cb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:button="@drawable/radiobtn"
+                        android:drawablePadding="5dp"
+                        android:text="  男"
+                        android:textColor="#626262"
+                        android:textSize="15sp"/>
+
+                    <RadioButton
+                        android:id="@+id/cb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:button="@drawable/radiobtn"
+                        android:drawablePadding="5dp"
+                        android:checked="true"
+                        android:text="  女"
+                        android:textColor="#626262"
+                        android:textSize="15sp"/>
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:text="备注"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/edit_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/tv"
+                    android:background="@drawable/border_text"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:maxLines="3"
+                    android:textColor="#000000"
+                    android:padding="9dp"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <com.allen.library.SuperButton
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:sUseSelector="true"
+                android:layout_marginTop="40dp"
+                app:sSolidColor="@color/theme_color"
+                app:sSelectorPressedColor="#087aca"
+                android:text="保存"
+                app:sSelectorNormalColor="@color/theme_color"
+                app:sCornersRadius="8dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

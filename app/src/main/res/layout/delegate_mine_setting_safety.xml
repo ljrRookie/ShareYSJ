@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/btn_login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="登录密码"
+        app:sLeftViewGravity="left_center"
+        app:sLeftViewMarginLeft="20dp"
+        app:sRightIconRes="@mipmap/icon_black_to"
+        />
+    <com.allen.library.SuperTextView
+        android:id="@+id/btn_pay_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="支付密码"
+        app:sLeftViewGravity="left_center"
+        app:sLeftViewMarginLeft="20dp"
+        app:sRightIconRes="@mipmap/icon_black_to"
+        />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/btn_person_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextSize="15sp"
+        app:sLeftTextString="实名认证"
+        app:sLeftViewGravity="left_center"
+        app:sLeftViewMarginLeft="20dp"
+        app:sRightIconRes="@mipmap/icon_black_to"
+        />
+</LinearLayout>

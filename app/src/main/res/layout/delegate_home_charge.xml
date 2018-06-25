@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/tv_flag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftIconRes="@mipmap/icon_charge"
+        app:sLeftTextColor="#474747"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="充电说明"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_info"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:sUseSelector="true"
+        android:layout_marginTop="50dp"
+        app:sSolidColor="@color/theme_color"
+        app:sSelectorPressedColor="#087aca"
+        android:text="立即充电"
+        app:sSelectorNormalColor="@color/theme_color"
+        app:sCornersRadius="8dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+</LinearLayout>

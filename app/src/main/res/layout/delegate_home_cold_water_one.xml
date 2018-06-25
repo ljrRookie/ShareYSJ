@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.allen.library.SuperTextView
+        android:id="@+id/tv_flag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftIconRes="@mipmap/icon_water_a"
+        app:sLeftTextColor="#474747"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="立即取水"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_free_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/btn_blue_wither_bg"
+            android:gravity="center"
+            android:text="您有0次免费饮水次数"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_use_free"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="立即使用"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:sCornersBottomRightRadius="7dp"
+            app:sCornersTopRightRadius="7dp"
+            app:sGradientEndColor="#f8c503"
+            app:sGradientOrientation="RIGHT_LEFT"
+            app:sGradientStartColor="#fab124"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_buy_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/btn_blue_wither_bg"
+            android:gravity="center"
+            android:text="您已购买0次饮水次数"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_use_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="立即使用"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:sCornersBottomRightRadius="7dp"
+            app:sCornersTopRightRadius="7dp"
+            app:sGradientEndColor="#f8c503"
+            app:sGradientOrientation="RIGHT_LEFT"
+            app:sGradientStartColor="#fab124"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/btn_blue_wither_bg"
+            android:gravity="center"
+            android:text="如果您未有饮水次数\n点击前往获取"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_get_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="立即前往"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            app:sCornersBottomRightRadius="7dp"
+            app:sCornersTopRightRadius="7dp"
+            app:sGradientEndColor="#fba535"
+            app:sGradientOrientation="RIGHT_LEFT"
+            app:sGradientStartColor="#fc6664"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/line"
+        android:layout_marginTop="20dp"
+        android:layout_height="10dp"/>
+    <com.allen.library.SuperTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:sLeftIconRes="@mipmap/icon_ad"
+        app:sLeftTextColor="#474747"
+        app:sLeftTextSize="16sp"
+        app:sLeftTextString="喝水说明"/>
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:lineSpacingExtra="4dp"
+        android:background="@android:color/white"
+        android:text="1、新注册会员可获得免费饮水机会\n2、前往点点物购买商品有机会获得免费喝水次数\n3、邀请好友注册会员可获得免费喝水次数"
+        android:textColor="#8f8f8f"
+        android:textSize="15sp"/>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

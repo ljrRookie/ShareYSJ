@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/line"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="@mipmap/bg_portrait"
+            />
+        <TextView
+            android:id="@+id/btn_rechange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_blue_bg"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="投资"
+            android:textColor="@color/theme_color"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_rechange"
+            android:text="投资金额：0.00"
+            android:textColor="#ff4400"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/tv_invest"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_pic"
+            android:text="名称"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bg_money"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@mipmap/bg_mine">
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="当前预计分红"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_money_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/btn_withdraw"
+            android:layout_width="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:sCenterTextString="提现"
+            app:sCenterTextColor="@color/theme_color"
+            app:sShapeCornersRadius="5dp"
+            app:sCenterTextSize="13sp"
+            app:sUseShape="true"
+            app:sShapeSelectorPressedColor="@color/line"
+            app:sShapeSelectorNormalColor="@android:color/white"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        >
+
+        <RelativeLayout
+            android:id="@+id/btn_money_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_q"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@mipmap/icon_alliance_money"/>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_q"
+                android:layout_centerHorizontal="true"
+                android:text="累计分红"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/money"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="0.00元"
+                android:textColor="@color/orange"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_money_wait"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_w"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@mipmap/icon_alliance_bonus"/>
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_w"
+                android:layout_centerHorizontal="true"
+                android:text="累计投资"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_invest_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="0.00元"
+                android:textColor="@color/orange"
+                android:textSize="11sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_money_already"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_e"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="center"
+                android:src="@mipmap/icon_alliance_settle"/>
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_e"
+                android:layout_centerHorizontal="true"
+                android:text="投资机箱"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/tv_machine_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="0台"
+                android:textColor="@color/orange"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

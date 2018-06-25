@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical" >
+    <!-- #aa005ea8  透明蓝 -->
+    <ListView
+        android:id="@+id/title_list"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_white_bg"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="35dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginRight="35dp"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:divider="@color/line"
+        android:scrollingCache="false" />
+
+</LinearLayout>

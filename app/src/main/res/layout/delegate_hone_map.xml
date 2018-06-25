@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <com.allen.library.SuperButton
+                android:id="@+id/btn_scan"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                app:sCornersRadius="8dp"
+                app:sSelectorNormalColor="@color/theme_color"
+                app:sSelectorPressedColor="#087aca"
+                app:sSolidColor="@color/theme_color"
+                app:sUseSelector="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/icon_scan"
+                android:drawablePadding="5dp"
+                android:text="扫码用水"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back_round"
+            />
+
+        <EditText
+            android:id="@+id/edit_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="饮水机"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/btn_clean"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+
+            android:src="@mipmap/icon_clead"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@mipmap/icon_map"/>
+</RelativeLayout>

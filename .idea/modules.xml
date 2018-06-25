@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DropDownViewLib/DropDownViewLib.iml" filepath="$PROJECT_DIR$/DropDownViewLib/DropDownViewLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MobikeLibrary/MobikeLibrary.iml" filepath="$PROJECT_DIR$/MobikeLibrary/MobikeLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShareYSJ.iml" filepath="$PROJECT_DIR$/ShareYSJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annotations/annotations.iml" filepath="$PROJECT_DIR$/annotations/annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/compiler/compiler.iml" filepath="$PROJECT_DIR$/compiler/compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/delegate_sdk/delegate_sdk.iml" filepath="$PROJECT_DIR$/delegate_sdk/delegate_sdk.iml" />
+    </modules>
+  </component>
+</project>

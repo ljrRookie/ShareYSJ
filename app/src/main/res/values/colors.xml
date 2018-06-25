@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0096ff</color>
+    <color name="theme_color">#0096ff</color>
+    <color name="line">#efefef</color>
+    <color name="black">#000000</color>
+    <color name="orange">#df5c14</color>
+    <color name="orange_high">#fab124</color>
+    <color name="orange_low">#f8c503</color>
+    <color name="blue_high">#0096ff</color>
+    <color name="blue_low">#67bffd</color>
+    <color name="gray_button">#d1d1d1</color>
+    <!-- QR_Code -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_points">#c000ff00</color>
+
+
+    <color name="black_text">#333333</color>
+    <color name="black_text2">#666666</color>
+    <color name="blue">#1DA1F2</color>
+</resources>

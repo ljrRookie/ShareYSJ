@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line"
+        android:layout_below="@id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="填写个人信息(认证后不可修改)"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/edit_white_bg"
+                android:hint="输入姓名"
+                android:paddingLeft="25dp"
+                android:textSize="16sp"/>
+
+
+            <EditText
+                android:id="@+id/edit_num"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/edit_white_bg"
+                android:hint="输入身份证号码"
+                android:paddingLeft="25dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:text="身份证"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_photo_a"
+                android:layout_width="230dp"
+                android:scaleType="fitXY"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/bg_photo_a"/>
+
+            <ImageView
+                android:id="@+id/iv_photo_b"
+                android:layout_width="230dp"
+                android:layout_height="130dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@mipmap/bg_photo_b"/>
+
+            <com.allen.library.SuperButton
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                app:sCornersRadius="8dp"
+                app:sSelectorNormalColor="@color/theme_color"
+                app:sSelectorPressedColor="#087aca"
+                app:sSolidColor="@color/theme_color"
+                app:sUseSelector="true"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

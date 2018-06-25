@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@mipmap/bg_pic"
+    android:scaleType="fitXY"
+android:adjustViewBounds="true"
+    android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/icon_back_round"
+        />
+
+    <ImageView
+        android:id="@+id/btn_info"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/icon_red_info"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#77ffffff">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="获得红包(元)："
+            android:textColor="#3d3d3d"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_cumulative_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_marginLeft="20dp"
+            android:text="0.00"
+            android:textColor="@color/orange"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:text="剩余次数："
+            android:textColor="#3d3d3d"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_flag"
+            android:layout_toRightOf="@id/tv_flag"
+            android:text="0"
+            android:textColor="#3d3d3d"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_bouns_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="红包池：0.00"
+            android:textColor="#3d3d3d"
+            android:textSize="13sp"
+            />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="直接购买次数"
+            android:textColor="@color/theme_color"
+            android:textSize="13sp"
+            app:sCornersRadius="8dp"
+            app:sSelectorNormalColor="#ffffff"
+            app:sSolidColor="#55ffffff"
+            app:sStrokeColor="@color/theme_color"
+            app:sStrokeWidth="0.5dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/icon_bottom_game"
+        />
+
+    <com.mobike.library.MobikeView
+        android:id="@+id/mobike_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_back"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>
